@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "712397126559",
+    "project_id": "chatings-b46ac",
+    "storage_bucket": "chatings-b46ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712397126559:android:471028999f0ba8dd381baa",
+        "android_client_info": {
+          "package_name": "com.example.chatings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712397126559-qs33nls7sjpc1iu597nt2b9n63g21ifh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOHssaE9BcbhYxZQq7IYhXzaKwzrtOAdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712397126559-qs33nls7sjpc1iu597nt2b9n63g21ifh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

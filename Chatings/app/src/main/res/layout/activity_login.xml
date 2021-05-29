@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textSize="50sp"/>
+
+    <EditText
+        android:id="@+id/lemail"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:ems="10"
+        android:hint="Email"
+        android:layout_below="@+id/title"
+        android:inputType="textEmailAddress"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/lpassword"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/input_bg"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/lemail"
+        android:layout_alignLeft="@+id/lemail"
+        android:layout_alignStart="@+id/lemail" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/pink"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:id="@+id/cardView"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="31dp"
+        android:layout_below="@+id/forgatepassword"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Login"
+                android:textAlignment="center"
+                android:fontFamily="monospace"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/linkregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Here..."
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_below="@+id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/forgatepassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgate Password?"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="15sp"
+        android:textColor="@color/lightgreen"
+        android:layout_below="@+id/lpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@+id/lemail"
+        android:layout_marginBottom="6dp" />
+
+</RelativeLayout>

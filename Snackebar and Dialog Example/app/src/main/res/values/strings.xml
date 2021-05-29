@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SnackebarExample</string>
+    <string name="omessage">You are Offline</string>
+</resources>

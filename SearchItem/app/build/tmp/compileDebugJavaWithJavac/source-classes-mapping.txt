@@ -1,0 +1,2 @@
+com/example/searchitemapp/BuildConfig.java
+ com.example.searchitemapp.BuildConfig

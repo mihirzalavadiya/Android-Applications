@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         toolbar.inflateMenu(R.menu.main_menu);
     }
 
+	// oncreate 
+
     public boolean onCreateOptionsmenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;

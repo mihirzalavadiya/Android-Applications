@@ -57,11 +57,21 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         var id = item.getItemId()
         val intent = Intent(this, ObjectAnimator::class.java)
-        if (id == R.id.object_animator)
-        {
+        if (id == R.id.object_animator) {
             startActivity(intent)
             return false
         }
+        else if(id == R.id.dynamic_animation) {
+            val intent1 = Intent(this, DynamicAnimation::class.java)
+            startActivity(intent1)
+            return false
+        }
+        else if(id == R.id.card_flip) {
+            val intent2 = Intent(this, MainActivity::class.java)
+            startActivity(intent2)
+            return false
+        }
+
         return super.onOptionsItemSelected(item)
     }
 }

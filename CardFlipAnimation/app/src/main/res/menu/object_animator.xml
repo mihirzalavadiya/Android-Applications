@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/card_flip"
+        android:title="@string/card_flip"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
     <item
         android:id="@+id/object_animator"
         android:title="@string/object_animator"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/dynamic_animation"
+        android:title="Dynamic Animation"
         android:orderInCategory="100"
         app:showAsAction="never"
         />

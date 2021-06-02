@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Card Flip Animation</string>
     <string name="object_animator">Object Animator</string>
+    <string name="dynamic_animation">Dynamic Animation</string>
+    <string name="card_flip">Card Flip Animation</string>
 
 </resources>

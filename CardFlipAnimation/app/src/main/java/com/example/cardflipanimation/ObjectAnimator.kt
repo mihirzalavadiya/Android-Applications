@@ -84,6 +84,11 @@ class ObjectAnimator : AppCompatActivity() {
             startActivity(intent2)
             return false
         }
+        else if(id == R.id.zoom_animation) {
+            val intent2 = Intent(this, ZoomAnimation::class.java)
+            startActivity(intent2)
+            return false
+        }
         return super.onOptionsItemSelected(item)
     }
 }

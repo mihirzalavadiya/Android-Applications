@@ -18,7 +18,14 @@
 
     <item
         android:id="@+id/dynamic_animation"
-        android:title="Dynamic Animation"
+        android:title="@string/dynamic_animation"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/zoom_animation"
+        android:title="@string/zoom_animation"
         android:orderInCategory="100"
         app:showAsAction="never"
         />

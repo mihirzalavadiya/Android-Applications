@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/black"
+    tools:context=".ZoomAnimation">
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/thumb_button_1"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="75dp"-->
+<!--            android:layout_marginRight="1dp"-->
+<!--            android:src="@drawable/car"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:contentDescription="description image 1" />-->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/car"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+                />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/btn_zoomIn"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imageView"
+            android:text="Zoom In"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/roundbtn" />
+
+        <TextView
+            android:id="@+id/btn_zoomOut"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/imageView"
+            android:background="@drawable/roundbtn"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Zoom Out"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

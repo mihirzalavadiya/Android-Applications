@@ -71,7 +71,11 @@ class ZoomAnimation : AppCompatActivity() {
             startActivity(intent2)
             return false
         }
-
+        else if(id == R.id.auto_animate) {
+            val intent2 = Intent(this, AutoAnimate::class.java)
+            startActivity(intent2)
+            return false
+        }
         return super.onOptionsItemSelected(item)
     }
 }

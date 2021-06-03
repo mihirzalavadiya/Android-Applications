@@ -29,4 +29,11 @@
         android:orderInCategory="100"
         app:showAsAction="never"
         />
+
+    <item
+        android:id="@+id/auto_animate"
+        android:title="@string/auto_animate"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
 </menu>

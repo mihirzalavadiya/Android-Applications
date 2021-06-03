@@ -4,5 +4,6 @@
     <string name="dynamic_animation">Dynamic Animation</string>
     <string name="card_flip">Card Flip Animation</string>
     <string name="zoom_animation">Zoom Animation</string>
+    <string name="auto_animate">Auto Animate</string>
 
 </resources>

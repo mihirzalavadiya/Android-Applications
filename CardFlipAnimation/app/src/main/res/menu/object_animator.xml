@@ -43,4 +43,11 @@
         android:orderInCategory="100"
         app:showAsAction="never"
         />
+
+    <item
+        android:id="@+id/shared_animation"
+        android:title="@string/shared_animation"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
 </menu>

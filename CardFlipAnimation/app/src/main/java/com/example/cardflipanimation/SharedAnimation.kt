@@ -1,51 +1,40 @@
 package com.example.cardflipanimation
 
-import android.animation.AnimatorInflater
-import android.animation.AnimatorSet
+import android.app.ActivityOptions
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.os.Build
 import android.os.Bundle
+import android.view.View
+import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
+import android.util.Pair
 import android.view.Menu
 import android.view.MenuItem
-import com.example.cardflipanimation.databinding.ActivityMainBinding
+import com.example.cardflipanimation.databinding.ActivitySharedAnimationBinding
 
-class MainActivity : AppCompatActivity() {
+class SharedAnimation : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-    lateinit var front_anim:AnimatorSet
-    lateinit var back_anim:AnimatorSet
-    var isFront = true
+    private lateinit var binding: ActivitySharedAnimationBinding
 
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivitySharedAnimationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val scale = applicationContext.resources.displayMetrics.density
-        binding.cardFront.cameraDistance = 8000 * scale
-        binding.cardBack.cameraDistance = 8000 * scale
+        setTitle("Shared Animation")
 
-        //set front animation
-        front_anim = AnimatorInflater.loadAnimator(applicationContext, R.animator.front_animator) as AnimatorSet
-        back_anim = AnimatorInflater.loadAnimator(applicationContext, R.animator.back_animator) as AnimatorSet
+        binding.profile.setOnClickListener {
+            val sharedIntent = Intent(this, SharedAniationTwo::class.java)
 
-        //set event listener
-        binding.flipBtn.setOnClickListener {
-            if (isFront)
-            {
-                front_anim.setTarget(binding.cardFront)
-                back_anim.setTarget(binding.cardBack)
-                front_anim.start()
-                back_anim.start()
-                isFront = false
-            }
-            else {
-                front_anim.setTarget(binding.cardBack)
-                back_anim.setTarget(binding.cardFront)
-                back_anim.start()
-                front_anim.start()
-                isFront = true
-            }
+//            val pairs: Array<Any?> = arrayOfNulls<Any?>(3)
+            val p1 = Pair.create<View, String>(binding.personLogo, "personlogoTransition")
+            val p2 = Pair.create<View, String>(binding.sharedTitle, "titleTransition")
+            val p3 = Pair.create<View, String>(binding.profileDesc, "descTransition")
+
+            val option = ActivityOptions.makeSceneTransitionAnimation(this, p1, p2, p3) as ActivityOptions
+
+            startActivity(sharedIntent, option.toBundle())
         }
     }
 

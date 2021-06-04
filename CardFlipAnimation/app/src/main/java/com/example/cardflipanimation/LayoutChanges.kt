@@ -85,6 +85,11 @@ class LayoutChanges : AppCompatActivity() {
             startActivity(intent5)
             return false
         }
+        else if(id == R.id.shared_animation) {
+            val intent6 = Intent(this, SharedAnimation::class.java)
+            startActivity(intent6)
+            return false
+        }
 
         return super.onOptionsItemSelected(item)
     }

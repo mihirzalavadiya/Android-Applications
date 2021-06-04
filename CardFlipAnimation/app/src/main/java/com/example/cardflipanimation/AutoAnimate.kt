@@ -28,6 +28,7 @@ class AutoAnimate : AppCompatActivity() {
         binding5 = ActivityAutoAnimateBinding.inflate(layoutInflater)
         setContentView(binding5.root)
 
+        setTitle("Auto Animate")
 
         binding5.itemAdd.setOnClickListener {
             val params = RelativeLayout.LayoutParams(
@@ -107,6 +108,11 @@ class AutoAnimate : AppCompatActivity() {
         else if(id == R.id.auto_animate) {
             val intent2 = Intent(this, AutoAnimate::class.java)
             startActivity(intent2)
+            return false
+        }
+        else if(id == R.id.layout_changes) {
+            val intent5 = Intent(this, LayoutChanges::class.java)
+            startActivity(intent5)
             return false
         }
 

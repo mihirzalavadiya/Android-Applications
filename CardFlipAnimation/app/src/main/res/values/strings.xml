@@ -5,5 +5,6 @@
     <string name="card_flip">Card Flip Animation</string>
     <string name="zoom_animation">Zoom Animation</string>
     <string name="auto_animate">Auto Animate</string>
+    <string name="layout_changes">Animate Layout Changes</string>
 
 </resources>

@@ -36,4 +36,11 @@
         android:orderInCategory="100"
         app:showAsAction="never"
         />
+
+    <item
+        android:id="@+id/layout_changes"
+        android:title="@string/layout_changes"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
 </menu>

@@ -94,6 +94,11 @@ class ObjectAnimator : AppCompatActivity() {
             startActivity(intent2)
             return false
         }
+        else if(id == R.id.layout_changes) {
+            val intent5 = Intent(this, LayoutChanges::class.java)
+            startActivity(intent5)
+            return false
+        }
         return super.onOptionsItemSelected(item)
     }
 }

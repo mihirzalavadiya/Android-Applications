@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CardFlipAnimation">
-        <activity android:name=".AutoAnimate"></activity>
+        <activity android:name=".LayoutChanges"></activity>
+        <activity android:name=".AnimateLayoutChnages" />
+        <activity android:name=".AutoAnimate" />
         <activity android:name=".ZoomAnimation" />
         <activity android:name=".DynamicAnimation" />
         <activity android:name=".ObjectAnimator" />

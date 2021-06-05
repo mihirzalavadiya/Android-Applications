@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity() {
     var audioManager: AudioManager? = null
 
     fun play() {
+        if (player == null)
+        {
+            player = MediaPlayer.create(this, R.raw.rabta)
+        }
         player?.start()
     }
 
@@ -33,6 +37,7 @@ class MainActivity : AppCompatActivity() {
 
     fun stop() {
         player?.stop()
+        player = null
     }
 
 
@@ -41,9 +46,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        player = MediaPlayer.create(this, R.raw.rabta)
-
-        audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
+        audioManager = getSystemService(AUDIO_SERVICE) as AudioManager
         val seekVol = findViewById<SeekBar>(R.id.seekVol)
 
         val maxVol = audioManager!!.getStreamMaxVolume(AudioManager.STREAM_MUSIC)
@@ -59,22 +62,6 @@ class MainActivity : AppCompatActivity() {
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {}
             override fun onStopTrackingTouch(seekBar: SeekBar?) {}
-        })
-
-        // End Audio Manager
-
-        // Progress
-        val seekProg = findViewById<SeekBar>(R.id.seekProg)
-
-        player?.getDuration()?.let { duration -> seekProg.setMax(duration) }
-
-        seekProg.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
-                player!!.seekTo(progress)
-            }
-
-            override fun onStartTrackingTouch(seekBar: SeekBar) {}
-            override fun onStopTrackingTouch(seekBar: SeekBar) {}
         })
 
         binding.play.setOnClickListener {

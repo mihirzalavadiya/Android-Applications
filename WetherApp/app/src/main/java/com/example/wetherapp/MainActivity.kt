@@ -23,6 +23,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         weatherTask().execute()
+		
+		 findViewById<TextView>(R.id.search_btn).setOnClickListener {
+            var CS: String = findViewById<EditText>(R.id.citysearch).text.toString()
+            CITY = CS
+            findViewById<EditText>(R.id.citysearch).setText("")
+//            Toast.makeText(this, CITY, Toast.LENGTH_SHORT).show()
+
+            weatherTask().execute()
+        }
     }
 
     inner class weatherTask() : AsyncTask<String, Void, String>() {

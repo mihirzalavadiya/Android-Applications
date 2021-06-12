@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/title_game"
+            android:textColor="@color/dark_purple"
+            android:text="Guessing Number"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:fontFamily="monospace"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/game_description"
+            android:textColor="@color/white"
+            android:text="This game the android is randomly select an integer from 1 to 15. You all keep guessing number. This device suggest your number is high or low."
+            android:layout_below="@+id/title_game"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="monospace"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/guess_number"
+            android:background="@drawable/round_text"
+            android:layout_below="@+id/game_description"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:fontFamily="monospace"
+            android:textSize="15sp"
+            android:textDirection="inherit"
+            android:paddingLeft="5dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:hint="Enter number"
+            android:inputType="number"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/high_low"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="40dp"
+            android:text=""
+            android:layout_below="@+id/guess_number"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/btn_check"
+            android:text="Check Number"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/round_btn"
+            android:layout_below="@+id/high_low"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/game_score"
+            android:text="Game Score is : 0"
+            android:textColor="@color/dark_purple"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/attempt"
+            android:text="You try it : 0"
+            android:textColor="@color/dark_purple"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_above="@+id/game_score"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

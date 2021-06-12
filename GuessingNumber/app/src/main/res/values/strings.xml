@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Guessing Number</string>
+    <string name="too_high">Too High</string>
+    <string name="too_low">Too Low</string>
+    <string name="game_over">Game Over</string>
+</resources>

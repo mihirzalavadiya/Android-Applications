@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:columnCount="4"
+                android:rowCount="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/firstPerson"
+                    android:gravity="center"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:background="@drawable/roung_orange"
+                    android:layout_width="120dp"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:src="@drawable/person"
+                        android:layout_width="80dp"
+                        android:transitionName="personImage"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:text="@string/billGatesName"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:transitionName="personName"
+                        android:layout_below="@+id/image1"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/data1"
+                        android:layout_below="@+id/name1"
+                        android:textColor="@color/black"
+                        android:transitionName="personData"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/billGatesData"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/secondPerson"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/round_yellow"
+                    android:layout_margin="3dp"
+                    android:layout_width="120dp"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:src="@drawable/person1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name2"
+                        android:text="@string/steveJobsName"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/image2"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/data2"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/name2"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/steveJobsData"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/thirdPerson"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/round_blue"
+                    android:layout_margin="3dp"
+                    android:layout_width="120dp"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:src="@drawable/person2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name3"
+                        android:text="@string/sundarPichaiName"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/image3"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/data3"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/name3"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/sundarPichaiData"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fourthPerson"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/round_pink"
+                    android:layout_margin="3dp"
+                    android:layout_width="120dp"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:src="@drawable/person4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name4"
+                        android:text="@string/jeffBezosName"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/image4"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/data4"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/name4"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/jeffBezosData"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fifthPerson"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/round_pink"
+                    android:layout_margin="3dp"
+                    android:layout_width="120dp"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:src="@drawable/person5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name5"
+                        android:text="@string/markZuckerbergName"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/image5"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/data5"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/name5"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/markZuckerbergData"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sixPerson"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/round_blue"
+                    android:layout_margin="3dp"
+                    android:layout_width="120dp"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:src="@drawable/person6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name6"
+                        android:text="@string/kevinSystromName"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/image6"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/data6"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/name6"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/kevinSystromData"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sevenPerson"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/round_yellow"
+                    android:layout_margin="3dp"
+                    android:layout_width="120dp"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/image7"
+                        android:src="@drawable/person7"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name7"
+                        android:text="@string/evanSpiegelName"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/image7"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/data7"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/name7"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/steveJobsData"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/eightPerson"
+                    android:gravity="center"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:background="@drawable/roung_orange"
+                    android:layout_width="120dp"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/image8"
+                        android:src="@drawable/person8"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name8"
+                        android:text="@string/jetBrainsName"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/image8"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/data8"
+                        android:layout_below="@+id/name8"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/jetBrainsData"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ninePerson"
+                    android:gravity="center"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:background="@drawable/roung_orange"
+                    android:layout_width="120dp"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/image9"
+                        android:src="@drawable/person"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name9"
+                        android:text="@string/JhaverchandMeghaniName"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/image9"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/data9"
+                        android:layout_below="@+id/name9"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/JhaverchandMeghaniData"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tenPerson"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/round_yellow"
+                    android:layout_margin="3dp"
+                    android:layout_width="120dp"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/image10"
+                        android:src="@drawable/person1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name10"
+                        android:text="@string/markZuckerbergName"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/image10"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/data10"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/name10"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/markZuckerbergData"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/elevenPerson"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/round_blue"
+                    android:layout_margin="3dp"
+                    android:layout_width="120dp"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/image11"
+                        android:src="@drawable/person6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name11"
+                        android:text="@string/billGatesName"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/image11"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/data11"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/name11"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/billGatesData"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/twelvePerson"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/round_pink"
+                    android:layout_margin="3dp"
+                    android:layout_width="120dp"
+                    android:layout_height="250dp">
+
+                    <ImageView
+                        android:id="@+id/image12"
+                        android:src="@drawable/person5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name12"
+                        android:text="@string/steveJobsName"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/image12"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/data12"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/name12"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/steveJobsData"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </GridLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+</RelativeLayout>

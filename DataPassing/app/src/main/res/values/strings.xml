@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">DataPassing</string>
+    <string name="billGatesName">Bill Gates</string>
+    <string name="billGatesData">Bill Gates was born in Seattle, Washington, on October 28, 1955. He is the son of William H. Gates Sr. (1925–2020) and Mary Maxwell Gates (1929–1994). His ancestry includes English, German, and Irish/Scots-Irish.</string>
+
+    <string name="steveJobsName">Steve Jobs</string>
+    <string name="steveJobsData">Steven Paul Jobs was born on February 24, 1955, to Abdulfattah Jandali and Joanne Schieble, and was adopted by Paul and Clara Jobs. His biological father, Abdulfattah al-Jandali grew up in Homs, Syria, and was born into an Arab Muslim household.</string>
+
+    <string name="sundarPichaiName">Sundar Pichai</string>
+    <string name="sundarPichaiData">Pichai Sundararajan (born June 10, 1972), better known as Sundar Pichai, is an Indian-American business executive. He is the chief executive officer (CEO) of Alphabet Inc. and its subsidiary Google.</string>
+
+    <string name="jeffBezosName">Jeff Bezos</string>
+    <string name="jeffBezosData">Jeffrey Preston Bezos (born January 12, 1964) is an American business magnate, media proprietor, and investor. Bezos is the founder and CEO of the multi-national technology company Amazon.</string>
+
+    <string name="markZuckerbergName">Mark Zuckerberg</string>
+    <string name="markZuckerbergData">Mark Elliot Zuckerberg (born May 14, 1984) is an American media magnate, internet entrepreneur, and philanthropist. He is known for co-founding Facebook, Inc. and serves as its chairman, chief executive officer, and controlling shareholder.</string>
+
+    <string name="kevinSystromName">Kevin Systrom</string>
+    <string name="kevinSystromData">Kevin Systrom (born December 30, 1983) is an American computer programmer and entrepreneur. He co‑founded Instagram, the worlds largest photo sharing website, along with Mike Krieger.</string>
+
+    <string name="evanSpiegelName">Evan Spiegel</string>
+    <string name="evanSpiegelDate">Evan Thomas Spiegel (born June 4, 1990) is an American businessman who is the co-founder and CEO of the American social media company Snap Inc., which he created (as Snapchat Inc.) with Bobby Murphy and Reggie Brown while they were students at Stanford University. Spiegel was the youngest billionaire in the world in 2015.</string>
+
+    <string name="jetBrainsName">JetBrains</string>
+    <string name="jetBrainsData">JetBrains, initially called IntelliJ Software, was founded in 2000 in Prague by three Russian software developers Sergey Dmitriev, Valentin Kipyatkov and Eugene Belyaev. The companys first product was IntelliJ Renamer, a tool for code refactoring in Java.</string>
+
+    <string name="JhaverchandMeghaniName">Jhaverchand Meghani</string>
+    <string name="JhaverchandMeghaniData">Jhaverchand or Zaverchand Kalidas Meghani (28 August 1896 – 9 March 1947) was an Indian poet, writer, social reformer and freedom fighter. He is a well-known name in the field of Gujarati literature. He was born in Chotila where the Government College has been renamed for this literary as Raashtreeya Shaayar Zaverchand Meghani College, Chotila.</string>
+
+
+
+</resources>

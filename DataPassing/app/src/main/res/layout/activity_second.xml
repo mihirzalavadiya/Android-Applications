@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/your_layout_id"
+    tools:context=".SecondActivity">
+
+    <ImageView
+        android:id="@+id/receiveImage"
+        android:src="@drawable/person"
+        android:layout_width="match_parent"
+        android:transitionName="personImage"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:id="@+id/receiveName"
+        android:layout_marginTop="20dp"
+        android:transitionName="personName"
+        android:text="Kotlin 1"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/receiveImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/receiveData"
+        android:layout_marginTop="20dp"
+        android:transitionName="personData"
+        android:text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolorem, dicta dolore, quo necessitatibus natus vitae sint quisquam porro consectetur culpa repellat ipsam eum impedit. Aut optio cupiditate eius consectetur?"
+        android:padding="20dp"
+        android:justificationMode="inter_word"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/receiveName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

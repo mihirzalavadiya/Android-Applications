@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_text"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start">
+
+            <ImageView
+                android:id="@+id/color_red"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/red_pen" />
+
+            <ImageView
+                android:id="@+id/color_blue"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/blue_pen" />
+
+            <ImageView
+                android:id="@+id/color_orange"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/orange_pen" />
+
+            <ImageView
+                android:id="@+id/color_green"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/green_pen" />
+
+            <ImageView
+                android:id="@+id/color_pink"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pink_pen" />
+
+            <ImageView
+                android:id="@+id/color_yellow"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/yellow_pen" />
+
+            <ImageView
+                android:id="@+id/color_white"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/white_pen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="end">
+
+            <ImageView
+                android:id="@+id/controllUndo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/undo" />
+
+            <ImageView
+                android:id="@+id/controllRedo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/redo" />
+
+            <ImageView
+                android:id="@+id/controllDelete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:src="@drawable/delete" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.paintapp.DrawPath
+            android:id="@+id/PaintArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
